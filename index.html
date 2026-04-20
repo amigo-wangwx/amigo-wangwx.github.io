@@ -32,7 +32,8 @@
         // window.location.href = links.universalLink;
       } else {
         try {
-          checkAndroidAppInstalled();
+          window.location.href = "intent://apps/reelrush"+window.__w2a__ +"#Intent;scheme=reelrush;package=company.reelrush.and;S.browser_fallback_url=https://play.google.com/store/apps/details?id=company.reelrush.and;end;"
+          // checkAndroidAppInstalled();
         } catch (e) {
           alert("error:" + e);
           window.location.href = links.googlePlayLink;
