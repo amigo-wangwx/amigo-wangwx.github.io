@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" id="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="application-name" content="AnyStories" />
+  <meta name="Referrer" content="always">
+  <meta name="facebook-domain-verification" content="5ovcs0do3kylgklzw5l378gts6aegg" />
+  <title>ReelRush-WWX-落地页</title>
+
+  <script>
+    const CONFIG_ENABLE_ALERT_ON_JSS_LOADED = true; // 按需改成 false
+
+
+    // https://delicate-shortbread-af9d22.netlify.app/?appName=reelrush&pixel=1520064579310131&adt=reelrush%3A%2F%2Fnavigator%2Fvideo%2Fplayer%2F178159%3Fndl_pid%3Dfacebook%26ndl_acc_id%3D1520064579310131%26ndl_campaign_id%3D%7B%7Bcampaign.id%7D%7D%26ndl_ad_id%3D%7B%7Bad.id%7D%7D%26ndl_adset_id%3D%7B%7Badset.id%7D%7D%26ndl_act_id%3D1548541663052435%26ndl_book_id%3D178159%26lang%3Den-us%26zyid%3D794265614422154_1265405738634725_A5B79EA77F0E7B1076B8936CCE0DB30FB9D3A2B8607E47AF872BA9C5DA4EBDADFE4A551D495DA9010E8D5446E0CB46458F0BB3D05E4879F8_%7B%7Bad.id%7D%7D&v=4.0
+    // https://delicate-shortbread-af9d22.netlify.app/?appName=reelrush&pixel=1520064579310131&adt=reelrush%3A%2F%2Fnavigator%2Fvideo%2Fplayer%2F178159%3Fndl_pid%3Dfacebook%26ndl_acc_id%3D1520064579310131%26ndl_campaign_id%3D%257B%257Bcampaign.id%257D%257D%26ndl_ad_id%3D%257B%257Bad.id%257D%257D%26ndl_adset_id%3D%257B%257Badset.id%257D%257D%26ndl_act_id%3D1548541663052435%26ndl_book_id%3D178159%26lang%3Den-us%26zyid%3D794265614422154_1265405738634725_A5B79EA77F0E7B1076B8936CCE0DB30FB9D3A2B8607E47AF872BA9C5DA4EBDADFE4A551D495DA9010E8D5446E0CB46458F0BB3D05E4879F8_%257B%257Bad.id%257D%257D&v=4.0
+    // https://delicate-shortbread-af9d22.netlify.app/??gid=795610550116485&appName=reelrush&pid=1520064579310131&adt=&_btid=test_trackid&test_bi=n9e3fl&bacid=64221D438A2F8F7039CEAD17EC07B92CE224C3DCA5C2B316F6E2BEBF7737548EE7728D93B4F919A4E36EC61CAE2DFB44168637B87D2B56F8&badid=12345678&&fbclid=IwAR3v2pDDwAJ6_rwGRm1ipVDo1VWOJBDO1sDGmMtRkQP35l3tOFNFRUEmJAg_aem_ARId5gQnLWEqBtxfk3mhKQa2f5747pu5XbxtAwpAFzLJ6omqhCIQkvlGl65NAThesCv3-155Jq5pu3245d4418M19YnRvau7Rc14hVB8yHvGuagOaq6LMJlAiG-GAe0DWPg
+    var appName = getQueryParams('appName') || 'reelrush';
+    var pid = getQueryParams('pixel') || '1520064579310131';
+    var adt = getQueryParams('adt') || 'reelrush%3A%2F%2Fnavigator%2Fvideo%2Fplayer%2F178159%3Fndl_pid%3Dfacebook%26ndl_acc_id%3D1520064579310131%26ndl_campaign_id%3D%7B%7Bcampaign.id%7D%7D%26ndl_ad_id%3D%7B%7Bad.id%7D%7D%26ndl_adset_id%3D%7B%7Badset.id%7D%7D%26ndl_act_id%3D1548541663052435%26ndl_book_id%3D178159%26lang%3Den-us%26zyid%3D794265614422154_1265405738634725_A5B79EA77F0E7B1076B8936CCE0DB30FB9D3A2B8607E47AF872BA9C5DA4EBDADFE4A551D495DA9010E8D5446E0CB46458F0BB3D05E4879F8_%7B%7Bad.id%7D%7D';
+    var dad = getQueryParams('dad') || '';
+    var script = document.createElement('script');
+    script.type = 'text/javascript';
+    //https://b4scdn.shortdramalabs.com/jssdk/reelrush?pid=1520064579310131&adt=reelrush%3A%2F%2Fnavigator%2Fvideo%2Fplayer%2F178159%3Fndl_pid%3Dfacebook%26ndl_acc_id%3D1520064579310131%26ndl_campaign_id%3D%7B%7Bcampaign.id%7D%7D%26ndl_ad_id%3D%7B%7Bad.id%7D%7D%26ndl_adset_id%3D%7B%7Badset.id%7D%7D%26ndl_act_id%3D1548541663052435%26ndl_book_id%3D178159%26lang%3Den-us%26zyid%3D794265614422154_1265405738634725_A5B79EA77F0E7B1076B8936CCE0DB30FB9D3A2B8607E47AF872BA9C5DA4EBDADFE4A551D495DA9010E8D5446E0CB46458F0BB3D05E4879F8_%7B%7Bad.id%7D%7D&v=4.0
+    script.src = `https://b4scdn.shortdramalabs.com/jssdk/${appName}?pid=${pid}&adt=${adt}&dad=${dad}&v=4.0`;
+    script.onload = function () {
+    // 读取配置开关
+    if (CONFIG_ENABLE_ALERT_ON_JSS_LOADED) {
+      alert('jss 加载完成' + window.__w2a__ );
+      if (isIos()) {
+        // window.location.href = links.universalLink;
+      } else {
+        try {
+          checkAndroidAppInstalled();
+        } catch (e) {
+          alert("error:" + e);
+          window.location.href = links.googlePlayLink;
+        }
+      }
+    }
+  };
+
+    document.head.appendChild(script);
+
+    function getQueryParams(name, url) {
+      if (!url) url = location.href;
+      name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+      var regexS = "[\\?&]" + name + "=([^&#]*)";
+      var regex = new RegExp(regexS);
+      var results = regex.exec(url);
+      return results == null ? null : results[1];
+    };
+    function download() {
+      hm && hm.event("BI_StartTrial").then(function () {
+        goToApp();
+      }).catch(function (error) {
+        console.error('error', error);
+        goToApp();
+      });
+    }
+    function generateLinks() {
+      var w2akey = window.__w2a__ || '';
+      var params = w2akey ? ('?w2akey=' + encodeURIComponent(w2akey)) : '';
+      // IOS的链接
+      var universalLink = 'https://b4scdn.shortdramalabs.com/apps/reelrush' + params;
+
+      alert("generateLinks: " + params);
+
+      // 安卓自启动的链接
+      var deepLink = 'intent://b4scdn.shortdramalabs.com/apps/reelrush' + params + '#Intent;package=company.reelrush.and;scheme=https;end;';
+      // 测试链接
+      // var deepLink = 'intent://cdn.bi4sight.com/apps/test' + params + '#Intent;scheme=https;package=com.huntmobi.w2a;end;';
+      // 谷歌应用商店的链接
+      var googlePlayLink = "market://details?id=company.reelrush.and";
+      return { deepLink, universalLink, googlePlayLink };
+    }
+    function goToApp() {
+      var links = generateLinks();
+      alert(links.deepLink);
+
+      if (isIos()) {
+        window.location.href = links.universalLink;
+      } else {
+        try {
+          checkAndroidAppInstalled();
+        } catch (e) {
+          alert("error:" + e);
+          window.location.href = links.googlePlayLink;
+        }
+      }
+    }
+    function checkAndroidAppInstalled() {
+      var iframe = document.getElementById("iframe");
+      var { deepLink, googlePlayLink } = generateLinks();
+      
+      iframe.src = deepLink;
+      alert(iframe.src)
+      iframe.src = googlePlayLink;
+
+    }
+    function isIos() {
+      return (
+        window.navigator.userAgent &&
+        (/iP(ad|hone|od)/i.test(window.navigator.userAgent) ||
+          // The new iPad Pro Gen3 does not identify itself as iPad, but as Macintosh.
+          // https://github.com/vueuse/vueuse/issues/3577
+          (window.navigator.maxTouchPoints > 2 &&
+            /iPad|Macintosh/.test(window.navigator.userAgent)))
+      );
+    }
+  </script>
+  <style>
+    * {
+      margin: 0;
+    }
+
+    html,
+    body {
+      font-family: Helvetica, "Droid Sans", sans-serif;
+      -webkit-font-smoothing: antialiased;
+      font-size: 12px;
+    }
+
+    .content {
+      padding: 0 4vw 90px;
+    }
+
+    .download {
+      position: fixed;
+      width: 80%;
+      height: 48px;
+      left: 10%;
+      bottom: 30px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 18px;
+      font-weight: bold;
+      border-radius: 9999px;
+      background: #553eff;
+      color: #fff;
+      text-decoration: none;
+      opacity: 0;
+      transition: all 0.2s ease-in-out;
+      transform: translateY(200px);
+    }
+
+    .download.show {
+      transform: translateY(0);
+      opacity: 1;
+    }
+
+    .shopping {
+      position: fixed;
+      width: 80%;
+      height: 48px;
+      left: 10%;
+      bottom: 100px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 18px;
+      font-weight: bold;
+      border-radius: 9999px;
+      background: #00804a;
+      color: #fff;
+      text-decoration: none;
+      opacity: 0;
+      transition: all 0.2s ease-in-out;
+      transform: translateY(200px);
+    }
+
+    .shopping.show {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  </style>
+  <style>
+    .loader {
+      width: 50px;
+      aspect-ratio: 1;
+      border-radius: 50%;
+      border: 8px solid #514b82;
+      animation:
+        l20-1 0.8s infinite linear alternate,
+        l20-2 1.6s infinite linear;
+    }
+
+    @keyframes l20-1 {
+      0% {
+        clip-path: polygon(50% 50%, 0 0, 50% 0%, 50% 0%, 50% 0%, 50% 0%, 50% 0%)
+      }
+
+      12.5% {
+        clip-path: polygon(50% 50%, 0 0, 50% 0%, 100% 0%, 100% 0%, 100% 0%, 100% 0%)
+      }
+
+      25% {
+        clip-path: polygon(50% 50%, 0 0, 50% 0%, 100% 0%, 100% 100%, 100% 100%, 100% 100%)
+      }
+
+      50% {
+        clip-path: polygon(50% 50%, 0 0, 50% 0%, 100% 0%, 100% 100%, 50% 100%, 0% 100%)
+      }
+
+      62.5% {
+        clip-path: polygon(50% 50%, 100% 0, 100% 0%, 100% 0%, 100% 100%, 50% 100%, 0% 100%)
+      }
+
+      75% {
+        clip-path: polygon(50% 50%, 100% 100%, 100% 100%, 100% 100%, 100% 100%, 50% 100%, 0% 100%)
+      }
+
+      100% {
+        clip-path: polygon(50% 50%, 50% 100%, 50% 100%, 50% 100%, 50% 100%, 50% 100%, 0% 100%)
+      }
+    }
+
+    @keyframes l20-2 {
+      0% {
+        transform: scaleY(1) rotate(0deg)
+      }
+
+      49.99% {
+        transform: scaleY(1) rotate(135deg)
+      }
+
+      50% {
+        transform: scaleY(-1) rotate(0deg)
+      }
+
+      100% {
+        transform: scaleY(-1) rotate(-135deg)
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div id="app">
+    <div class="content w-e-text-container">
+      <div id="content_title"></div>
+      <div id="content"></div>
+    </div>
+    <div id="download" class="download show" onclick="download()">
+      点击下载
+    </div>
+  </div>
+  <div style="width: 0; height: 0">
+    <iframe id="iframe" src="" width="0" height="0" name="iframe"></iframe>
+  </div>
+</body>
+
+</html>
