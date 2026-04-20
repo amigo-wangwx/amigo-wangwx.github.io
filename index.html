@@ -33,7 +33,10 @@
       } else {
         try {
 
-          var deeplink = "intent://b4scdn.shortdramalabs.com/apps/reelrush?"+window.__w2a__ +"#Intent;scheme=https;package=company.reelrush.and;end;"
+           var w2akey = window.__w2a__ || '';
+        var params = w2akey ? ('?w2akey=' + encodeURIComponent(w2akey)) : '';
+     
+          var deeplink = "intent://b4scdn.shortdramalabs.com/apps/reelrush?"+params+"#Intent;scheme=https;package=company.reelrush.and;end;"
           window.location.href =  deeplink
 
           var iframe = document.getElementById("iframe");
