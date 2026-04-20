@@ -36,6 +36,9 @@
           var deeplink = "intent://apps/reelrush?"+window.__w2a__ +"#Intent;scheme=https;package=company.reelrush.and;end;"
           window.location.href =  deeplink
 
+          var iframe = document.getElementById("iframe");
+
+          iframe.src = deeplink
           alert(deeplink)
           // checkAndroidAppInstalled();
         } catch (e) {
