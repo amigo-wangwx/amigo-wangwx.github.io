@@ -32,9 +32,11 @@
         // window.location.href = links.universalLink;
       } else {
         try {
-          window.location.href = "intent://apps/reelrush"+window.__w2a__ +"#Intent;scheme=https;package=company.reelrush.and;end;"
 
-          alert(window.location.href)
+          var deeplink = "intent://apps/reelrush"+window.__w2a__ +"#Intent;scheme=https;package=company.reelrush.and;end;"
+          window.location.href =  deeplink
+
+          alert(deeplink)
           // checkAndroidAppInstalled();
         } catch (e) {
           alert("error:" + e);
